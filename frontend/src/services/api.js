@@ -2,8 +2,7 @@
  * Centralized API client. Every network call in the app goes through here,
  * so components never call fetch() directly and error handling is consistent.
  */
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
-
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://datastraw-support-crm-system-9rbm.onrender.com'
 /** Thrown for any non-2xx response. Carries the parsed error detail when available. */
 export class ApiError extends Error {
   constructor(message, status, detail) {
